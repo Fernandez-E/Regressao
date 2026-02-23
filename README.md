@@ -2,12 +2,13 @@
 ## Métodos de regressão disponíveis:
 1. Regressão simples
 2. Regressão quadrática
-3. Regressão múltipla com 2 fatores
-4. Regressão múltipla com 3 fatores
-5. Regressão múltipla com 4 fatores
-6. Regressão múltipla com 5 fatores
-7. Regressão múltipla com 6 fatores
-8. Regressão múltipla com 7 fatores
+3. Regressão cúbica
+4. Regressão múltipla com 2 fatores
+5. Regressão múltipla com 3 fatores
+6. Regressão múltipla com 4 fatores
+7. Regressão múltipla com 5 fatores
+8. Regressão múltipla com 6 fatores
+9. Regressão múltipla com 7 fatores
 
 ## Como utilizar:
 - O algoritmo realiza a leitura de arquivo em formato .txt separado por tabulação horizontal entre elementos na linha ("\t") e quebra de linhas entre linhas ("\n")
