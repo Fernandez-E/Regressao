@@ -24,7 +24,7 @@ Y  x1  x2
 1.5  1.5  1.8
 2.1  1.9  2.4
 ```
-É solocitado do usuário quais as metodologias de regressão devem ser executadas</br>
+É solicitado do usuário quais as metodologias de regressão devem ser executadas</br>
 Ao final da execução, é gerado o log com os resultado na mesma pasta em que está o arquivo do algoritmo com o nome "output.log".
 
 ### Exemplo de saída:
