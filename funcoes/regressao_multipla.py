@@ -46,7 +46,11 @@ def reg_mult_2f(arquivo):
         
             r2 = sum(VE)/sum(VT)
         
-            print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[j]}')
+            print(
+                f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} | '
+                  f'R2: {r2:.2f} | '
+                  f'T = {a0:.4f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[j]}'
+                )
             c+=1
             # print(r2)
         
@@ -108,7 +112,7 @@ def reg_mult_3f(arquivo):
         
                 r2 = sum(VE)/sum(VT)
         
-                print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[j]} + {a3:.4f} x {variaveis[k]}')
+                print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} | R2: {r2:.2f} | T = {a0:.8f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[j]} + {a3:.8f} x {variaveis[k]}')
                 c+=1
                 # print(r2)
         
@@ -179,7 +183,7 @@ def reg_mult_4f(arquivo):
             
                     r2 = sum(VE)/sum(VT)
             
-                    print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[j]} + {a3:.4f} x {variaveis[k]} + {a4:.4f} x {variaveis[l]}')
+                    print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} | R2: {r2:.2f} | T = {a0:.8f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[j]} + {a3:.8f} x {variaveis[k]} + {a4:.8f} x {variaveis[l]}')
                     c+=1
                     # print(r2)
             
@@ -260,7 +264,7 @@ def reg_mult_5f(arquivo):
                 
                         r2 = sum(VE)/sum(VT)
                 
-                        print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} + {variaveis[m]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[j]} + {a3:.4f} x {variaveis[k]} + {a4:.4f} x {variaveis[l]} + {a5:.4f} x {variaveis[m]}')
+                        print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} + {variaveis[m]:^7} | R2: {r2:.2f} | T = {a0:.8f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[j]} + {a3:.8f} x {variaveis[k]} + {a4:.8f} x {variaveis[l]} + {a5:.8f} x {variaveis[m]}')
                         c+=1
                         # print(r2)
                 
@@ -352,7 +356,7 @@ def reg_mult_6f(arquivo):
                     
                             r2 = sum(VE)/sum(VT)
                     
-                            print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} + {variaveis[m]:^7} + {variaveis[p]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[j]} + {a3:.4f} x {variaveis[k]} + {a4:.4f} x {variaveis[l]} + {a5:.4f} x {variaveis[m]} + {a6:.4f} x {variaveis[p]}')
+                            print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} + {variaveis[m]:^7} + {variaveis[p]:^7} | R2: {r2:.2f} | T = {a0:.8f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[j]} + {a3:.8f} x {variaveis[k]} + {a4:.8f} x {variaveis[l]} + {a5:.8f} x {variaveis[m]} + {a6:.8f} x {variaveis[p]}')
                             c+=1
                             # print(r2)
                     
@@ -456,7 +460,7 @@ def reg_mult_7f(arquivo):
                         
                                 r2 = sum(VE)/sum(VT)
                         
-                                print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} + {variaveis[m]:^7} + {variaveis[p]:^7} + {variaveis[q]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[j]} + {a3:.4f} x {variaveis[k]} + {a4:.4f} x {variaveis[l]} + {a5:.4f} x {variaveis[m]} + {a6:.4f} x {variaveis[p]} + {a7:.4f} x {variaveis[q]}')
+                                print(f'{c:>3}: {variaveis[i]:^7} + {variaveis[j]:^7} + {variaveis[k]:^7} + {variaveis[l]:^7} + {variaveis[m]:^7} + {variaveis[p]:^7} + {variaveis[q]:^7} | R2: {r2:.2f} | T = {a0:.8f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[j]} + {a3:.8f} x {variaveis[k]} + {a4:.8f} x {variaveis[l]} + {a5:.8f} x {variaveis[m]} + {a6:.8f} x {variaveis[p]} + {a7:.8f} x {variaveis[q]}')
                                 c+=1
                                 # print(r2)
                         

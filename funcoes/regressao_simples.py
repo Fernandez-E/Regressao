@@ -46,7 +46,7 @@ def reg_simples(arquivo):
         VT = [(y-y_med)**2 for y in Y]
         
         r2 = sum(VE)/sum(VT)
-        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a:.4f} x {variaveis[i]} + {b:.4f}')
+        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a:.8f} x {variaveis[i]} + {b:.8f}')
         c+=1
         if r2 > melhor_r2:
             melhor_r2 = r2

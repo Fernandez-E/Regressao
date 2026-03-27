@@ -50,7 +50,7 @@ def reg_quadratica(arquivo):
         
         r2 = sum(VE)/sum(VT)
         
-        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a0:.4f} + {a1:.4f} x {variaveis[i]} + {a2:.4f} x {variaveis[i]}^2')
+        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a0:.8f} + {a1:.8f} x {variaveis[i]} + {a2:.8f} x {variaveis[i]}^2')
         c+=1
         # print(r2)
         

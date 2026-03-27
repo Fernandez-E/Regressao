@@ -55,7 +55,7 @@ def reg_cubica(arquivo):
         
         r2 = sum(VE)/sum(VT)
         
-        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a0:.4f} x {variaveis[i]}^3 + {a1:.4f} x {variaveis[i]}^2 + {a2:.4f} x {variaveis[i]} + {a3:.4f}')
+        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a0:.12f} x {variaveis[i]}^3 + {a1:.12f} x {variaveis[i]}^2 + {a2:.12f} x {variaveis[i]} + {a3:.12f}')
         c+=1
         # print(r2)
         
