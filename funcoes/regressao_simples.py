@@ -3,7 +3,7 @@ import numpy as np
 
 def reg_simples(arquivo):
     variaveis, dados = dados_arquivo(arquivo)
-    melhor_r2 = 0
+    melhor_r2, melhor_mae, melhor_rmse, melhor_mse, melhor_r2a = 0, 0, 0, 0, 0
     melhor_indice = ''
     c=1
     
@@ -40,13 +40,25 @@ def reg_simples(arquivo):
         y_est = [a*x+b for x in X]
         y_med = sum(Y) / len(Y)
         
+        # residuos
+        residuos = [(y - y_mod) for y, y_mod in zip(Y, y_est)]
+        
+        mae = sum(abs(r) for r in residuos) / n
+        mse = sum(r**2 for r in residuos) / n
+        rmse = mse**0.5
+        
+        
         # print(y_est)
         
         VE = [(y-y_med)**2 for y in y_est]
         VT = [(y-y_med)**2 for y in Y]
         
         r2 = sum(VE)/sum(VT)
-        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | T = {a:.8f} x {variaveis[i]} + {b:.8f}')
+        
+        p = 1
+        r2_ajustado = 1 - (1 - r2) * (n - 1) / (n - p - 1)
+          
+        print(f'{c:>3}: {variaveis[i]:^7} | R2: {r2:.2f} | R2a: {r2_ajustado:^6.2f} | MAE: {mae:^6.2f} | MSE: {mse:^6.2f} | RMSE: {rmse:^6.2f} | T = {a:.8f} x {variaveis[i]} + {b:.8f}')
         c+=1
         if r2 > melhor_r2:
             melhor_r2 = r2
